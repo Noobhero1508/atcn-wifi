@@ -1,4 +1,4 @@
-# ATCN Wifi
+# ATCN Wifi (hiện chỉ hoạt động với "Free Wi-MESH - Rescue" tại KTX khu A)
 
 **Auto Connect Wifi KTX ĐHQGHCM** — tự động khôi phục kết nối Internet trên captive portal AWING/MikroTik mà không mở Chromium hay trình duyệt ẩn.
 
