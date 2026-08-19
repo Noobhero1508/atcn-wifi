@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python test_wifi_flow.py
+      - run: powershell -File scripts/build_windows.ps1
+      - run: .\release\ATCN-Wifi-Windows-x64.exe --smoke-test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-x64
+          path: release/*
+
+  build-macos:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-latest
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python test_wifi_flow.py
+      - run: bash scripts/build_macos.sh "${{ matrix.arch }}"
+      - run: |
+          "dist/ATCN Wifi.app/Contents/MacOS/ATCN Wifi" --smoke-test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-${{ matrix.arch }}
+          path: release/*
+
+  publish:
+    needs: [build-windows, build-macos]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: release
+          merge-multiple: true
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "${GITHUB_REF_NAME}"
+          release/*
+          --repo "${GITHUB_REPOSITORY}"
+          --title "ATCN Wifi ${GITHUB_REF_NAME}"
+          --generate-notes

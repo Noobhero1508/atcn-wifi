@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile
+        run: python -m py_compile atcn_wifi_core.py wifi_app.py test_wifi_flow.py
+      - name: Test captive portal flow
+        run: python test_wifi_flow.py
+      - name: Headless GUI smoke test
+        run: python wifi_app.py --smoke-test
+

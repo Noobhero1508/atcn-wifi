@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atcn-wifi"
+version = "1.1.0"
+description = "Auto Connect Wifi KTX ĐHQGHCM"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Noobhero1508"}]
+keywords = ["wifi", "captive-portal", "mikrotik", "awing", "vnu-hcm"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: MacOS X",
+  "Environment :: Win32 (MS Windows)",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+atcn-wifi = "atcn_wifi_core:main"
+
+[project.gui-scripts]
+atcn-wifi-gui = "wifi_app:main"
+
+[tool.setuptools]
+py-modules = ["atcn_wifi_core", "wifi_app"]
+

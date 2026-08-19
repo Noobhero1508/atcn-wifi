@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+.venv/
+.build-venv/
+build/
+dist/
+release/
+*.spec
+.DS_Store
+Thumbs.db
+assets/*.ico
+assets/*.icns
+assets/icon-preview.png
