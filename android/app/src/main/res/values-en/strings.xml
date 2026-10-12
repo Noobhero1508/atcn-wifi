@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ATCN Wifi</string>
+    <string name="app_subtitle">Auto Connect Wifi KTX VNU-HCM</string>
+    <string name="app_tagline">Keep AWING connected without opening a browser.</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_activity">Activity</string>
+    <string name="nav_settings">Settings</string>
+    <string name="back">Back</string>
+
+    <string name="status_title">Dorm Wi‑Fi</string>
+    <string name="status_network_unavailable">Wi‑Fi Internet unavailable</string>
+    <string name="status_connection_unknown">Internet not yet confirmed</string>
+    <string name="status_idle">Ready</string>
+    <string name="status_waiting_wifi">Waiting for Wi‑Fi</string>
+    <string name="status_checking">Checking connection</string>
+    <string name="status_connected">Internet connected</string>
+    <string name="status_login_required">Wi‑Fi sign-in required</string>
+    <string name="status_connecting">Signing in to AWING</string>
+    <string name="status_retry_wait">Waiting to retry</string>
+    <string name="status_not_target">Unsupported Wi‑Fi network</string>
+    <string name="status_error">Something went wrong</string>
+    <string name="status_idle_detail">Connect to the dorm Wi‑Fi, then tap Connect now or enable Auto monitoring.</string>
+    <string name="status_connected_detail">Your Internet connection is working normally.</string>
+    <string name="status_waiting_detail">The app will continue after this device connects to Wi‑Fi.</string>
+
+    <string name="auto_title">Auto monitoring</string>
+    <string name="auto_enabled">Running in background</string>
+    <string name="auto_disabled">Off</string>
+    <string name="auto_description">Responds immediately to network changes, with a lightweight periodic backup check. A persistent notification is shown while enabled.</string>
+    <string name="auto_switch_on">Enable auto monitoring</string>
+    <string name="auto_switch_off">Disable auto monitoring</string>
+    <string name="connect_now">Connect now</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="action_in_progress">Working…</string>
+
+    <string name="activity_title">Recent activity</string>
+    <string name="activity_empty">No activity yet.</string>
+    <string name="activity_empty_detail">Connection results and errors will appear here.</string>
+    <string name="view_all">View all</string>
+    <string name="clear_log">Clear log</string>
+    <string name="export_log">Export log</string>
+    <string name="export_file_name">atcn-wifi-log.txt</string>
+    <string name="export_header">ATCN Wifi — Diagnostic log</string>
+    <string name="export_success">Log exported.</string>
+    <string name="export_failed">Could not export the log.</string>
+    <string name="log_level_info">Information</string>
+    <string name="log_level_success">Success</string>
+    <string name="log_level_warning">Warning</string>
+    <string name="log_level_error">Error</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="connection_section">Connection</string>
+    <string name="check_frequency">Adaptive checks · Balanced</string>
+    <string name="check_frequency_description">Screen on: 5 seconds. Screen off for under 2 minutes: 10 seconds; afterwards: 30 seconds. Screen on triggers an immediate check. Android can defer checks during deep sleep.</string>
+    <string name="priority_title">Prioritize continuous connection</string>
+    <string name="priority_description">Keep the planned 5-second interval with the screen off, useful for calls or music. Uses more battery and remains subject to Android background limits.</string>
+    <string name="priority_accessibility">Prioritize continuous connection</string>
+    <string name="default_network_format">Last observed Android network: %1$s</string>
+    <string name="default_network_not_observed">Not observed yet</string>
+    <string name="default_network_none">No default network</string>
+    <string name="default_network_wifi">Wi‑Fi</string>
+    <string name="default_network_cellular">Mobile data · 4G/5G</string>
+    <string name="default_network_vpn">VPN</string>
+    <string name="default_network_other">Other network</string>
+    <string name="default_network_note">The Android default does not confirm dorm Wi‑Fi Internet access. The app checks and signs in separately through Wi‑Fi.</string>
+    <string name="last_check_format">Last Wi‑Fi check: %1$s</string>
+    <string name="check_not_yet">Not checked yet</string>
+    <string name="check_duration_format">Check duration: %1$d ms</string>
+    <plurals name="current_interval_format">
+        <item quantity="one">Current interval: %1$d second</item>
+        <item quantity="other">Current interval: %1$d seconds</item>
+    </plurals>
+    <string name="no_periodic_check">No periodic check running</string>
+    <string name="mobile_data_title">Use 4G/5G when Wi‑Fi loses Internet</string>
+    <string name="mobile_data_description">Keep mobile data on. On Samsung: Wi‑Fi → ⋮ → Intelligent Wi‑Fi → Switch to mobile data (if available). Android decides when to switch; ATCN Wifi still signs in over Wi‑Fi and cannot guarantee uninterrupted calls during a switch.</string>
+    <string name="open_wifi_settings">Open Wi‑Fi settings</string>
+    <string name="compatibility_title">AWING compatibility mode</string>
+    <string name="compatibility_description">Only when the standard flow fails, send View/Click events to AWING as if you used the portal. Off by default.</string>
+    <string name="compatibility_accessibility">Enable AWING compatibility mode</string>
+
+    <string name="battery_section">Background &amp; battery</string>
+    <string name="battery_title">Allow reliable background work</string>
+    <string name="battery_description">ATCN Wifi only runs in the background while Auto monitoring is enabled. Samsung may put the app to sleep; if reconnection is delayed, set battery usage to Unrestricted.</string>
+    <string name="open_battery_settings">Open battery settings</string>
+    <string name="notification_title">Monitoring notification</string>
+    <string name="notification_description">Android requires a persistent notification so monitoring can continue while the screen is off.</string>
+    <string name="open_notification_settings">Notification settings</string>
+
+    <string name="privacy_section">Privacy</string>
+    <string name="privacy_title">Your data stays on this device</string>
+    <string name="privacy_description">No account, ads, or first-party telemetry. Logs remain local and are shared only when you export them. Sign-in requests go directly to the MikroTik gateway and AWING.</string>
+    <string name="privacy_http_note">The dorm portal uses HTTP. Cleartext is only enabled for the required gateway, AWING and captive-check destinations; Internet verification uses HTTPS.</string>
+
+    <string name="notification_permission_title">Allow notifications</string>
+    <string name="notification_permission_message">ATCN Wifi needs to show a persistent notification while Auto monitoring is running. You can stop it at any time from the app.</string>
+    <string name="notification_permission_allow">Continue</string>
+    <string name="notification_permission_denied">Notifications were denied. Auto monitoring still runs; Android shows the app under Active apps instead of the notification drawer.</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="version_format">Version %1$s</string>
+    <string name="beta_label">Beta · Dorm Area A</string>
+
+    <string name="cd_app_logo">ATCN Wifi icon</string>
+    <string name="cd_connected">Internet connected</string>
+    <string name="cd_warning">Attention required</string>
+    <string name="cd_error">Connection error</string>
+    <string name="cd_loading">Working</string>
+</resources>

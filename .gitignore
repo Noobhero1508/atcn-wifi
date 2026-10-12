@@ -13,3 +13,16 @@ Thumbs.db
 assets/*.ico
 assets/*.icns
 assets/icon-preview.png
+
+# Android / Gradle
+.gradle/
+.kotlin/
+.idea/
+local.properties
+*.apk
+*.aab
+*.jks
+*.keystore
+captures/
+.externalNativeBuild/
+.cxx/

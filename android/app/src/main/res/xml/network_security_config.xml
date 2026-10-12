@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <!-- Legacy portal traffic and captive-redirect evidence only. Online verification uses HTTPS. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">186.186.0.1</domain>
+        <domain includeSubdomains="false">v1.awingconnect.vn</domain>
+        <domain includeSubdomains="false">connectivitycheck.gstatic.com</domain>
+        <domain includeSubdomains="false">www.msftconnecttest.com</domain>
+        <domain includeSubdomains="false">awifi.vn</domain>
+        <domain includeSubdomains="false">neverssl.com</domain>
+    </domain-config>
+</network-security-config>

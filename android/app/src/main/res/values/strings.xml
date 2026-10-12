@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ATCN Wifi</string>
+    <string name="app_subtitle">Auto Connect Wifi KTX ĐHQGHCM</string>
+    <string name="app_tagline">Giữ kết nối AWING liền mạch, không cần mở trình duyệt.</string>
+
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_activity">Hoạt động</string>
+    <string name="nav_settings">Cài đặt</string>
+    <string name="back">Quay lại</string>
+
+    <string name="status_title">Wi‑Fi KTX</string>
+    <string name="status_network_unavailable">Wi‑Fi chưa có Internet</string>
+    <string name="status_connection_unknown">Chưa xác nhận được Internet</string>
+    <string name="status_idle">Sẵn sàng</string>
+    <string name="status_waiting_wifi">Đang chờ Wi‑Fi</string>
+    <string name="status_checking">Đang kiểm tra</string>
+    <string name="status_connected">Đã kết nối Internet</string>
+    <string name="status_login_required">Wi‑Fi cần đăng nhập</string>
+    <string name="status_connecting">Đang đăng nhập AWING</string>
+    <string name="status_retry_wait">Đang chờ thử lại</string>
+    <string name="status_not_target">Không phải Wi‑Fi được hỗ trợ</string>
+    <string name="status_error">Có lỗi xảy ra</string>
+    <string name="status_idle_detail">Kết nối Wi‑Fi KTX rồi nhấn Kết nối ngay, hoặc bật Tự động theo dõi.</string>
+    <string name="status_connected_detail">Internet đang hoạt động bình thường.</string>
+    <string name="status_waiting_detail">Ứng dụng sẽ tiếp tục khi thiết bị kết nối Wi‑Fi.</string>
+
+    <string name="auto_title">Tự động theo dõi</string>
+    <string name="auto_enabled">Đang chạy ngầm</string>
+    <string name="auto_disabled">Đang tắt</string>
+    <string name="auto_description">Phản ứng ngay khi mạng thay đổi và kiểm tra dự phòng định kỳ. Một thông báo cố định sẽ xuất hiện khi bật.</string>
+    <string name="auto_switch_on">Bật tự động theo dõi</string>
+    <string name="auto_switch_off">Tắt tự động theo dõi</string>
+    <string name="connect_now">Kết nối ngay</string>
+    <string name="diagnose">Chẩn đoán</string>
+    <string name="action_in_progress">Đang xử lý…</string>
+
+    <string name="activity_title">Hoạt động gần đây</string>
+    <string name="activity_empty">Chưa có hoạt động nào.</string>
+    <string name="activity_empty_detail">Kết quả kết nối và lỗi sẽ xuất hiện tại đây.</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="clear_log">Xóa nhật ký</string>
+    <string name="export_log">Xuất nhật ký</string>
+    <string name="export_file_name">atcn-wifi-log.txt</string>
+    <string name="export_header">ATCN Wifi — Nhật ký chẩn đoán</string>
+    <string name="export_success">Đã xuất nhật ký.</string>
+    <string name="export_failed">Không thể xuất nhật ký.</string>
+    <string name="log_level_info">Thông tin</string>
+    <string name="log_level_success">Thành công</string>
+    <string name="log_level_warning">Cảnh báo</string>
+    <string name="log_level_error">Lỗi</string>
+
+    <string name="settings_title">Cài đặt</string>
+    <string name="connection_section">Kết nối</string>
+    <string name="check_frequency">Kiểm tra thích ứng · Cân bằng</string>
+    <string name="check_frequency_description">Màn hình sáng: 5 giây. Tắt màn hình dưới 2 phút: 10 giây; sau đó: 30 giây. Bật màn hình sẽ kiểm tra ngay. Android có thể trì hoãn kiểm tra khi máy ngủ sâu.</string>
+    <string name="priority_title">Ưu tiên kết nối liên tục</string>
+    <string name="priority_description">Giữ chu kỳ dự kiến 5 giây khi tắt màn hình, phù hợp lúc gọi hoặc nghe nhạc. Hao pin hơn và vẫn chịu giới hạn chạy nền của Android.</string>
+    <string name="priority_accessibility">Ưu tiên kết nối liên tục</string>
+    <string name="default_network_format">Mạng Android quan sát gần nhất: %1$s</string>
+    <string name="default_network_not_observed">Chưa quan sát</string>
+    <string name="default_network_none">Chưa có mạng mặc định</string>
+    <string name="default_network_wifi">Wi‑Fi</string>
+    <string name="default_network_cellular">Dữ liệu di động · 4G/5G</string>
+    <string name="default_network_vpn">VPN</string>
+    <string name="default_network_other">Mạng khác</string>
+    <string name="default_network_note">Mạng Android chọn không đồng nghĩa Wi‑Fi KTX đã có Internet. Ứng dụng kiểm tra và đăng nhập riêng qua Wi‑Fi.</string>
+    <string name="last_check_format">Kiểm tra Wi‑Fi gần nhất: %1$s</string>
+    <string name="check_not_yet">Chưa kiểm tra</string>
+    <string name="check_duration_format">Thời gian kiểm tra: %1$d ms</string>
+    <plurals name="current_interval_format">
+        <item quantity="one">Chu kỳ hiện tại: %1$d giây</item>
+        <item quantity="other">Chu kỳ hiện tại: %1$d giây</item>
+    </plurals>
+    <string name="no_periodic_check">Chưa chạy kiểm tra định kỳ</string>
+    <string name="mobile_data_title">Dùng 4G/5G khi Wi‑Fi mất Internet</string>
+    <string name="mobile_data_description">Giữ dữ liệu di động bật. Trên Samsung: Wi‑Fi → ⋮ → Intelligent Wi‑Fi → Chuyển sang dữ liệu di động (nếu có). Android quyết định chuyển mạng; ATCN Wifi vẫn đăng nhập qua Wi‑Fi và không bảo đảm cuộc gọi liền mạch khi chuyển mạng.</string>
+    <string name="open_wifi_settings">Mở cài đặt Wi‑Fi</string>
+    <string name="compatibility_title">Chế độ tương thích AWING</string>
+    <string name="compatibility_description">Chỉ khi cách chuẩn thất bại, gửi sự kiện View/Click tới AWING như khi bạn thao tác trên portal. Mặc định tắt.</string>
+    <string name="compatibility_accessibility">Bật chế độ tương thích AWING</string>
+
+    <string name="battery_section">Hoạt động nền &amp; pin</string>
+    <string name="battery_title">Cho phép chạy ổn định</string>
+    <string name="battery_description">ATCN Wifi chỉ chạy nền khi bạn bật Tự động theo dõi. Samsung có thể đưa ứng dụng vào chế độ ngủ; nếu kết nối lại chậm, hãy đặt ứng dụng thành Không hạn chế trong cài đặt pin.</string>
+    <string name="open_battery_settings">Mở cài đặt pin</string>
+    <string name="notification_title">Thông báo theo dõi</string>
+    <string name="notification_description">Android yêu cầu thông báo cố định để ứng dụng tiếp tục theo dõi khi tắt màn hình.</string>
+    <string name="open_notification_settings">Cài đặt thông báo</string>
+
+    <string name="privacy_section">Quyền riêng tư</string>
+    <string name="privacy_title">Dữ liệu ở lại trên thiết bị</string>
+    <string name="privacy_description">Không có tài khoản, quảng cáo hay telemetry riêng. Nhật ký được lưu cục bộ và chỉ được chia sẻ khi bạn chủ động xuất. Yêu cầu đăng nhập được gửi trực tiếp đến gateway MikroTik và AWING.</string>
+    <string name="privacy_http_note">Portal KTX dùng HTTP. Kết nối không mã hóa chỉ được mở cho gateway, AWING và các địa chỉ nhận diện captive portal cần thiết; xác nhận Internet dùng HTTPS.</string>
+
+    <string name="notification_permission_title">Cho phép thông báo</string>
+    <string name="notification_permission_message">ATCN Wifi cần hiển thị một thông báo cố định khi Tự động theo dõi đang chạy. Bạn vẫn có thể dừng ngay từ ứng dụng.</string>
+    <string name="notification_permission_allow">Tiếp tục</string>
+    <string name="notification_permission_denied">Thông báo đã bị từ chối. Tự động theo dõi vẫn chạy; Android sẽ hiển thị ứng dụng trong mục Ứng dụng đang hoạt động thay vì ngăn thông báo.</string>
+    <string name="dismiss">Đóng</string>
+    <string name="version_format">Phiên bản %1$s</string>
+    <string name="beta_label">Bản thử nghiệm · KTX khu A</string>
+
+    <string name="cd_app_logo">Biểu tượng ATCN Wifi</string>
+    <string name="cd_connected">Internet đã kết nối</string>
+    <string name="cd_warning">Cần chú ý</string>
+    <string name="cd_error">Lỗi kết nối</string>
+    <string name="cd_loading">Đang xử lý</string>
+</resources>
